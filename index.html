@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwello — Версии сайта</title>
+    <!-- Подключение шрифта Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fafafa;
+            color: #2b1b12;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .wrapper {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #8c827a;
+            margin-bottom: 40px;
+            line-height: 1.4;
+        }
+
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 18px 24px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            color: #2b1b12;
+            font-size: 15px;
+            font-weight: 600;
+            text-align: left;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .link-item span {
+            font-size: 11px;
+            font-weight: 400;
+            color: #8c827a;
+            display: block;
+            margin-top: 3px;
+        }
+
+        /* Иконка стрелочки внутри кнопки */
+        .link-item::after {
+            content: "→";
+            font-size: 18px;
+            color: #c4b9b0;
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        /* Эффект при наведении */
+        .link-item:hover {
+            background-color: #ffffff;
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .link-item:hover::after {
+            color: #2b1b12;
+            transform: translateX(4px);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #b5aba4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1 class="logo">Dwello</h1>
+        <p class="subtitle">Выберите вариант реализации веб-ресурса агентства недвижимости:</p>
+        
+        <div class="links-list">
+            <!-- Ссылка на 1-й сайт -->
+            <a href="___________________________" target="_blank" class="link-item">
+                <div>
+                    Нативная версия
+                    <span>HTML5 / CSS3 / Grid & Flexbox</span>
+                </div>
+            </a>
+            
+            <!-- Ссылка на 2-й сайт -->
+            <a href="___________________________" target="_blank" class="link-item">
+                <div>
+                    Компонентная версия
+                    <span>Фреймворк Bootstrap 5</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Разработка и верстка
+        </div>
+    </div>
+
+</body>
+</html>
